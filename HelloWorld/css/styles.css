@@ -1,0 +1,51 @@
+p {
+	color: orange;
+}
+
+body {
+	margin: 10px;
+}
+
+#products {
+	color: green;
+}
+
+.product {
+	color: yellowgreen;
+}
+
+/* a element with target of any value */
+a[target] {
+	color: green;
+}
+
+/* a element with target set as blank */
+a[target="_blank"] {
+	color: yellow;
+}
+
+/* a element with href property containing google */
+a[href*="google"]
+{
+	color: purple;
+}
+
+/* p within products as any descendant */
+#products p {
+	color: brown;
+}
+
+/* p within products as direct child */
+#products > p {
+	color: green;
+}
+
+/* p which is immediate sibling after products */
+#products + p {
+	color:darkmagenta;
+}
+
+/* all siblings after products */
+#products ~ p {
+	color:lightcoral;
+}

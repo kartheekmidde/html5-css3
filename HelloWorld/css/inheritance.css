@@ -1,0 +1,40 @@
+body {
+	margin: 10px;
+}
+
+p {
+	color: dodgerblue;
+	border: 1px solid black;
+}
+
+/* retain the original color and dont inherit from the parent */
+/* inherit the border of the parent */
+strong {
+	color: initial;
+	border: inherit;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	/* background-color: rgba(230, 206, 16, 1); */
+	/* background-color: #e6cd10; */
+	/* background-color: hsla(53, 100%, 40%, 0.5); */
+	/* background: linear-gradient(to bottom right, dodgerblue, yellow); */
+	/* background: linear-gradient(45deg, dodgerblue, yellow 90%); */
+	/* background: linear-gradient(45deg, dodgerblue, yellow, tomato); */
+	/* background: radial-gradient(circle at top left, red, yellow); */
+	background-color: coral;
+	border: 10px solid royalblue;
+	/* border-top: 20px solid royalblue; */
+	/* border-width: 10px 50px; */
+	/* border-radius: 50%; */
+	/* border-radius: 50%; */
+	/* box-shadow: 10px 10px 30px grey; */
+	box-shadow: 0 0 30px grey;
+}
+
+h1 {
+	color: white;
+	text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.6);
+}

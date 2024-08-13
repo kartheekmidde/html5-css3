@@ -1,0 +1,48 @@
+body {
+	margin: 10px;
+}
+
+.first-letter {
+	font-size: 140%;
+	font-weight: bold;
+}
+
+/*  :: for pseudo element */
+/* first letter of p */
+p::first-letter {
+	font-size: 140%;
+	font-weight: bold;
+}
+
+/* first line of p */
+p::first-line {
+	font-weight: bold;
+}
+
+/* selected text of p */
+p::selection {
+	background-color: pink;
+}
+
+/* any selected text */
+::selection {
+	background-color: pink;
+}
+
+/* insert ... before every p element */
+p::before {
+	content: "...";
+	display: block;
+}
+
+/* insert **** after every p element */
+p::after {
+	content: '****';
+	display: block;
+}
+
+/* !important - other specific rules (id > class > type) are discarded */
+/* bad practice */
+h1 {
+	color: peru !important;
+}

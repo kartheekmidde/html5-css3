@@ -1,0 +1,56 @@
+body {
+	margin: 10px;
+}
+
+/* paragraphs with class first */
+p.first {
+	font-size: 140%;
+	font-style: italic;
+}
+
+/* any element with class second */
+.second {
+	font-style: italic;
+}	
+
+/* : used for pseudo-classes */
+/* first-child of article */
+article :first-child {
+	font-style: italic;
+}
+
+/* all first appearance of child type of article */
+article :first-of-type {
+	font-style: italic;
+}
+
+/* first child p of article */
+article p:first-of-type {
+	font-style: italic;
+}
+
+/* last child p of article */
+article p:last-of-type {
+	font-style: bold;
+}
+
+/* last child of article */
+article p:last-child {
+	font-style: bold;
+}
+
+ul li:nth-child(odd) {
+	color: deeppink;
+}
+
+ul li:nth-child(even) {
+	color: blue;
+}
+
+a:visited, a:link {
+	color:dodgerblue;
+}
+
+a:hover, a:focus {
+	color: deeppink;
+}
